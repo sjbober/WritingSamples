@@ -108,14 +108,7 @@ greetings Sarah!
 
 We can also use a stack diagram to see the value of all the variables during the execution of the program and which functions (if any) they belong to, as well as the order in which functions were called (Downey, 2015, ch 3.9). Below is a stack diagram for the above code:
 
-__main__
-
-say_hello
-
-greeting → "hello"
-
-name → "Sarah"
-greeting → "greetings Sarah!"
+![Stack diagram for greeting execution](/images/argspar_stackdiagram.png)
 
 The variable *greeting* is assigned to the frame called __main__ because it was defined outside of any function. When the *say_hello* function is called, we can see that the local variable *name* is assigned to the value of string "Sarah", and the local variable *greeting* is assigned to the value "greetings Sarah!". These local variables do not have any effect on variables defined outside of its function, which explains why even after calling the function, the non-local variable *greeting* does not change.
 
