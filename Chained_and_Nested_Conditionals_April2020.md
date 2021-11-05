@@ -62,6 +62,6 @@ def can_buy_beer_version2(age, money, price):
         print("You cannot buy beer because you are not old enough")
 ```
 
-## References
+## Reference
 
 Downey, A. (2015). Think Python: How to think like a computer scientist. Green Tea Press. This book is licensed under Creative Commons Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0).

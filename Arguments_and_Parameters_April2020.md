@@ -112,6 +112,6 @@ We can also use a stack diagram to see the value of all the variables during the
 
 The variable *greeting* is assigned to the frame called __main__ because it was defined outside of any function. When the *say_hello* function is called, we can see that the local variable *name* is assigned to the value of string "Sarah", and the local variable *greeting* is assigned to the value "greetings Sarah!". These local variables do not have any effect on variables defined outside of its function, which explains why even after calling the function, the non-local variable *greeting* does not change.
 
-## References
+## Reference
 
 Downey, A. (2015). Think Python: How to think like a computer scientist. Green Tea Press. This book is licensed under Creative Commons Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0).
