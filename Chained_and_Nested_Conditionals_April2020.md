@@ -1,4 +1,5 @@
 # Chained and Nested Conditionals
+
 We can use a chained conditional in our program if we want to check for more than 2 possible conditions (known as branches) and execute unique portions of code when one of those conditions is met (Downey, 2015, ch 5.6). For example, imagine we will print out a different message based on what the soup of the day is at our favorite restaurant. There are many more than 2 possible soup flavors, so a chained conditional is a good option to use here:
 
 ```python

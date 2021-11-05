@@ -1,4 +1,5 @@
 # Arguments and Parameters
+
 *Example 1: Define a function that takes an argument. Call the function. Identify what code is the argument and what code is the parameter.*
 
 A parameter is essentially a variable that acts as a placeholder in a function; when someone calls the function, they can pass whatever arguments they want, and each occurrence of the parameter will be substituted by the given argument (Downey, 2015, ch 3.7). Parameters are useful because we can make our functions dynamic and make actions or return results that vary based on the arguments given, resulting in functions that are more interesting and more useful. 
