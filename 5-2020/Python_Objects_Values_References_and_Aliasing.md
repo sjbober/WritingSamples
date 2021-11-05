@@ -1,4 +1,5 @@
 # Python Objects, Values, References, and Aliasing
+
 Objects are a piece of data that has a value, type, and unique location in our computer's memory (Rossom, 2001). Therefore, objects are not values, but they have values. This concept can be a bit confusing, which is why it's best to illustrate with examples.
 
 Let's say I want to create a grocery list for myself. I create a Python list where each element is a string that represents the item I need to buy. I create a variable called *my_grocery_list* and assign my list to that variable. 
@@ -24,9 +25,9 @@ False
 
 While this behavior might not seem intuitive, these objects work similarly to objects in real life. If this scenario happened without the help of a computer, I would write down my grocery list on a piece of paper. Then, I would write another list for my mother on a different piece of paper, and her list would happen to have the same items as mine. The final result would be that I have two pieces of paper that look exactly the same, but we know that they are still two different objects. The same goes for objects in Python. They might look exactly the same, but they are two different objects that occupy different physical locations in memory.
 
-Python does a good of remembering where it stores objects in memory, but humans are not very good at remembering things like that, which is why variables are important to help us distinguish between different objects. When we assign an object to a variable, we are creating a reference to that object (Downey, 2015, ch 10.11). We can use this variable, or reference, to *refer back* to our object whenever we need it. We have already been doing this quite a bit. 
+Python does a good job of remembering where it stores objects in memory, but humans are not very good at remembering things like that, which is why variables are important to help us distinguish between different objects. When we assign an object to a variable, we are creating a reference to that object (Downey, 2015, ch 10.11). We can use this variable, or reference, to *refer back* to our object whenever we need it. We have already been doing this quite a bit. 
 
-You might be wondering, why do we even need to care about objects vs values vs references etc? One answer is that oftentimes we need to do manipulations or calculations on objects, but we want to keep the original list just in case. Think about any paper or assignment that you have worked on. It's always a safe bet to make a copy of your work, just in case something goes wrong and you need to revert back to the original.
+You might be wondering, why do we even need to care about objects vs values vs references, etc? One answer is that oftentimes we need to do manipulations or calculations on objects, but we want to keep the original list just in case. Think about any paper or assignment that you have worked on. It's always a safe bet to make a copy of your work, just in case something goes wrong and you need to revert back to the original.
 
  In Python, there are actions that seem like we are making a copy of our object, but we are actually creating a second reference to it; when an object has more than one variable that refers to it, it is known as aliasing (Downey, 2015, ch 10.11). 
 
@@ -37,7 +38,7 @@ For example, let's redo the first scenario with grocery lists. I quickly create 
 >>> grocery_list2 = grocery_list 
 ```
 
-I think I saved myself some time from having to write the same list twice. I tell my mom what her variable name is so she can refer to it when she needs it. Now I go to the store, and start crossing things off my list.
+I think I saved myself some time from having to write the same list twice. I tell my mom what her variable name is so she can refer to it when she needs it. Now I go to the store and start crossing things off my list.
 
 ```python
 >>> grocery_list.remove('eggs')
@@ -67,7 +68,7 @@ True
 
 Now, when we create functions that have parameters, similar behavior occurs: the parameter will become an additional reference for whatever object we pass as the argument (Downey, 2015, 10.12).
 
-For example, let's create a function to delete objects off my grocery list instead of doing it manually each time. The function *deleteGroceryItem* has a parameter *groceries* that should be a list, and another parameter *item* that should be a string item that is in the *groceries* list. 
+For example, let's create a function to delete objects off my grocery list instead of doing it manually each time. The function *deleteGroceryItem* has a parameter *groceries* that should be a list and another parameter *item* that should be a string item that is in the *groceries* list. 
 
 ```python
 >>> def deleteGroceryItem(groceries, item):
@@ -87,7 +88,7 @@ So, when we pass a list to the function *deleteGroceryItem*, the function alters
 >>>
 ```
 
-If we wanted to avoid aliasing our original list, we can create a copy of our list inside of our function and do all of our manipulations on the copy. Then, we can return the copy.
+If we want to avoid aliasing our original list, we can create a copy of our list inside of our function and do all of our manipulations on the copy. Then, we can return the copy.
 
 ```python
 >>> def deleteItemV2(groceries, item):

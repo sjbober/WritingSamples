@@ -36,7 +36,7 @@ Call the function when the preconditions are met:
 Hello there, sarah
 ```
 
-A second reason that a function may not be working is that a postcondition for the function has not been satisfied (Downey, 2015, ch 6.9). A postcondition is any expected result that a function has promised to have, which could be printing information, supplying a specific return value, or doing some other action (Downey, 2015, ch 4.10). If one of these promised results does not occur, then the function is not behaving as expected and has a bug.
+A second reason that a function may not be working is that a postcondition for the function has not been satisfied (Downey, 2015, ch 6.9). A postcondition is an expected result that a function has promised to have, which could be printing information, supplying a specific return value, or doing some other action (Downey, 2015, ch 4.10). If one of these promised results does not occur, then the function is not behaving as expected and has a bug.
 
 The function *calcGrade* calculates and returns your grade as a percentage out of 100. It has a parameter *score* that is expected to be a float or integer representation of the score you received on an assignment or test, and the second parameter *total_points* is expected to be a float or integer representation of the total number of points you could have received.
 
