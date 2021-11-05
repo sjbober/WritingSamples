@@ -26,7 +26,7 @@ A value is a piece of data that serves as one of the basic building blocks in pr
 Your argument is hi
 ```
 
-Whenever we need to use a specific value multiple times, we can assign that value a name which is known as a variable (Downey, 2015, p. 9). Creating variables saves us time because if we need to change a value, we only have to modify our program in one place. In this second example, I assigned the variable *arg* to the value of string "bamboozled". Then I called the function using the variable *arg* as the argument.
+Whenever we need to use a specific value multiple times, we can assign that value a name, and that name is known as a variable (Downey, 2015, p. 9). Creating variables saves us time because if we need to change a value, we only have to modify our program in one place. In this second example, I assigned the variable *arg* to the value of the string "bamboozled". Then I called the function using the variable *arg* as the argument.
 
 ```python
 >>> # Calling the function with a variable:
@@ -111,7 +111,7 @@ We can also use a stack diagram to see the value of all the variables during the
 
 ![Stack diagram for greeting execution](/images/argspar_stackdiagram.png)
 
-The variable *greeting* is assigned to the frame called __main__ because it was defined outside of any function. When the *say_hello* function is called, we can see that the local variable *name* is assigned to the value of string "Sarah", and the local variable *greeting* is assigned to the value "greetings Sarah!". These local variables do not have any effect on variables defined outside of its function, which explains why even after calling the function, the non-local variable *greeting* does not change.
+The variable *greeting* is assigned to the frame called __main__ because it was defined outside of any function. When the *say_hello* function is called, we can see that the local variable *name* is assigned to the value of the string "Sarah", and the local variable *greeting* is assigned to the value "greetings Sarah!". These local variables do not have any effect on variables defined outside of their function, which explains why even after calling the function, the non-local variable *greeting* does not change.
 
 ## Reference
 

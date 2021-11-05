@@ -16,7 +16,7 @@ def soup_of_the_day(flavor):
 
 When a single branch also has multiple options and can be broken into multiple branches, we can create a nested conditional by putting a conditional inside of a conditional branch (Downey, 2015, ch 5.7). A branch in a simple conditional or a branch in a chained conditional can be a nested conditional. Additionally, a nested conditional can be a simple conditional or it can be a chained conditional.
 
-For one example, let's rewrite the *soup_of_the_day* function to also include a parameter called *price*. Maybe we like Cheddar Broccoli and Chicken Noodle soup, but will not buy it if the *price* is too high. 
+For one example, let's rewrite the *soup_of_the_day* function to also include a parameter called *price*. Maybe we like Cheddar Broccoli and Chicken Noodle soup but will not buy them if the *price* is too high. 
 
 ```python
 def soup_of_the_day(flavor, price):
@@ -36,7 +36,7 @@ def soup_of_the_day(flavor, price):
         print("Hmmmm...too risky. Maybe next time")
 ```
 
-Nested conditionals can get messy quickly, so one way to avoid them is to use logical operators (Downey, 2015, ch 5.7). Let's write a function which determines and prints if someone can buy beer. In the US, the legal drinking age is 21, so we should check to make sure the age is equal to or greater than 21. We should also make sure the person has enough money to buy the beer. In this function, there are three parameters: *age* (which is the age of the person), *money* (how much money they have), and *price* (the price of the beer). 
+Nested conditionals can get messy quickly, so one way to avoid them is to use logical operators (Downey, 2015, ch 5.7). Let's write a function that determines and prints if someone can buy beer. In the US, the legal drinking age is 21, so we should check to make sure the age is equal to or greater than 21. We should also make sure the person has enough money to buy the beer. In this function, there are three parameters: *age* (which is the age of the person), *money* (how much money they have), and *price* (the price of the beer). 
 
 In this function, we first check to see if the person is 21 or older. If they are, then we check if they have more money than the price. If they do, we print that they can buy beer, and if they don't, we print that they don't have enough money. If the person is not 21 or older, we print out that they can't buy beer because they aren't old enough.
 
@@ -51,7 +51,7 @@ def can_buy_beer(age, money, price):
         print("You cannot buy beer because you are not old enough")
 ```
 
-Now, we can rewrite this function by using the logical operator *and* to avoid using a nested conditional. In the first conditional statement, we check if they are 21 and older and if they have enough money. In the second conditional statement, we only check if they are at least 21. If they are, it means that they don't have enough money (because if they did, the first conditional statement would have been true). Finally, if neither of these statements are true, we can assume that the person is not old enough.
+Now, we can rewrite this function by using the logical operator *and* to avoid using a nested conditional. In the first conditional statement, we check if they are 21 and older and if they have enough money. In the second conditional statement, we only check if they are at least 21. If they are, it means that they don't have enough money (because if they did, the first conditional statement would have been true). Finally, if neither of these statements is true, we can assume that the person is not old enough.
 
 ```python
 def can_buy_beer_version2(age, money, price):
