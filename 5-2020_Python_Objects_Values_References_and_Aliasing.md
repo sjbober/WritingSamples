@@ -66,7 +66,7 @@ Instead of creating a copy of my list, I aliased it by giving it a second name (
 True
 ```
 
-Now, when we create functions that have parameters, similar behavior occurs: the parameter will become an additional reference for whatever object we pass as the argument (Downey, 2015, 10.12).
+Now, when we create functions that have parameters, similar behavior occurs: the parameter will become an additional reference for whatever object we pass as the argument (Downey, 2015, ch 10.12).
 
 For example, let's create a function to delete objects off my grocery list instead of doing it manually each time. The function *deleteGroceryItem* has a parameter *groceries* that should be a list and another parameter *item* that should be a string item that is in the *groceries* list. 
 
