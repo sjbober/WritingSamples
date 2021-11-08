@@ -1,0 +1,15 @@
+# When to Use Recursion
+
+A recursive method is one that either calls itself from inside its own body or it is called by a method that it calls. A problem that can be broken into subproblems that are essentially just smaller versions of the original problem is a perfect candidate for a recursive algorithm (Eck, 2019, ch 9.1.1). However, like most approaches, recursion has advantages and disadvantages and may not be a good fit for every problem.
+
+While no problem requires recursion, for some types of problems, recursion is the most elegant and concise solution and makes your code look very clean (Eck, 2019, ch 9.1.0). If your program is a candidate for recursion and has become very messy and convoluted, recursion may be a good solution to clean up your code. Recursion can also be easier to implement at times because it requires us to think of ways to break our problems into smaller ones and allows us to take a "leap of faith" by assuming our method will work on a subset of the original problem (2015, Downey, ch 6.6).
+
+However, recursion comes with disadvantages. First and foremost, recursion can be difficult to visualize and very rapidly creates many branches of execution, which can make a recursive function challenging to understand or debug. Additionally, each recursive call results in an additional method call being added to the call stack, where each call requires more memory for its local parameters, computation, and the call itself. Due to this, recursion requires a lot of memory, even for a smaller number of computations or small problem sets. As a result, the program may terminate because it ran out of memory before being able to solve some medium and smaller-sized problems. If you have memory constraints you need to consider in your program, recursion may not be a good option. An additional disadvantage is that if recursion is implemented poorly it may require computation of the same values repetitively, which dramatically increases the amount of time needed for the program to complete (2019, Sedgewick, ch 2.3). This issue can be avoided using the dynamic programming approach which stores previously calculated answers to avoid recomputing the same values, but it is an easy miss for a novice programmer.
+
+## References
+
+Downey, A. (2015). Think Python, How to think like a computer scientist. This book is licensed under Creative Commons Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)
+
+Eck, D. J. (2019). Introduction to programming using Java, version 8.1. Hobart and William Smith Colleges. [http://math.hws.edu/javanotes](http://math.hws.edu/javanotes)
+
+Sedgewick, R., & Wayne, K. (2019). Computer Science: An Interdisciplinary Approach. Retrieved from [https://introcs.cs.princeton.edu/java/23recursion/](https://introcs.cs.princeton.edu/java/23recursion/)

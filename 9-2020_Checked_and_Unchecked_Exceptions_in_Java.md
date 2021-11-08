@@ -1,0 +1,13 @@
+# Checked and Unchecked Exceptions in Java
+
+An exception is any event that disturbs the normal flow of the program (Eck, 2019, ch 8.3.1). When an exception needs to be handled, the computer program is always responsible for catching and handling exceptions. The computer itself is not capable of intervening in our programs. However, not all exceptions need to be handled, and this depends on its type. In Java, there are two general categories of exceptions: checked and unchecked exceptions (Gallardo et al., 2016). 
+
+Unchecked exceptions can be broken into two categories: Errors and Runtime exceptions. Errors are very rare issues that occur outside of the application itself (Gallardo et al., 2016), and include the JVM running out of memory or corrupt data in a file. These types of issues are very difficult to predict and usually the program cannot be recovered when they do occur, so it usually doesn't make sense to try to handle these types of exceptions. Instead, it's better to let the program crash when these types of issues occur. The other type of unchecked exception is the runtime exception which occurs during runtime and generally indicates some sort of logic problem in the code (Gallardo et al., 2016), such as trying to access an element in an array for an index that doesn't exist or dividing by zero. Since they are usually a result of logic issues, it is best to resolve the logic issues in your code instead of trying to handle the exceptions they might cause.
+
+Checked exceptions are exceptions that occur during compilation, which could be trying to read a file that does not exist. The compiler requires this type of exception to have exception handlers because the program can usually recover from this type of issue (Gallardo et al., 2016). The program itself (and the programmer, by extension) needs to properly handle this exception with a try-catch block somewhere in the code, either in the method that could cause the exception or somewhere in the call stack leading up to that method's call.
+
+## References
+
+Eck, D. J. (2019). Introduction to programming using Java, version 8.1. Hobart and William Smith Colleges. [http://math.hws.edu/javanotes](http://math.hws.edu/javanotes)
+
+Gallardo, R., Gordon, J., Hommel, S., Kannan, S., & Zakhour, S. B. (2016). The catch or specify requirement (The Java™ tutorials > essential classes > exceptions). Oracle. Retrieved from [https://docs.oracle.com/javase/tutorial/essential/exceptions/catchOrDeclare.html](https://docs.oracle.com/javase/tutorial/essential/exceptions/catchOrDeclare.html)
