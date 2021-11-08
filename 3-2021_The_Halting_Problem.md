@@ -28,13 +28,13 @@ boolean contrary(program, input) {
 Now, what will happen if *contrary* calls itself using itself as both arguments? This call would look like:
 
 ```java
-*contrary(contrary, contrary);*
+contrary(contrary, contrary);
 ```
 
 which will result in the call:
 
 ```java
-*halts(contrary, contrary);*
+halts(contrary, contrary);
 ```
 
 Because we have assumed that halts exist, it should properly tell us whether contrary will produce the correct result. 
