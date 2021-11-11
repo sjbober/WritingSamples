@@ -1,2 +1,3 @@
 # Writing Samples
-Samples of writing for a technical audience
+ 
+Unfortunately, I am not able to provide professional writing samples, so I have provided some writing samples from my Computer Science coursework.
